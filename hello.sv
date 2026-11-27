@@ -5,4 +5,9 @@ module tb_top();
         $finish;
     end
     
+    initial begin
+        $dumpfile("hello.vcd");
+        $dumpvars(0, tb_top);
+    end
+
 endmodule 
